@@ -9,7 +9,7 @@ import joblib  # Used to save and load Python objects in binary format.
                 # Saving preprocessors
                 # Saving scalers
 from ensure import ensure_annotations # This is a decorator that checks whether function arguments match their type hints.
-from box import ConfigBox  # ConfigBox converts a dictionary into an object.
+from box import ConfigBox  # ConfigBox converts a dictionary into an object. So that we can access dictionary items using '.' notation. Eg. dict = {"k1":"val1","k2":"val2"} we can only access 'val1' using dict['k1'] but it is easy using this syntax : "dict.k1". ConfigBox allows us this as it converts the dictionary into an object.
 from pathlib import Path 
 from typing import Any  # Any means the variable can be of any data type.
 
