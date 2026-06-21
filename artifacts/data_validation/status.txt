@@ -1,2 +1,0 @@
-Validation status: False
-Unexpected column found: Id
